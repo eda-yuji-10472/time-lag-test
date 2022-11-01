@@ -14,7 +14,7 @@ func main() {
 	c := cron.New()
 	c.AddFunc("* * * * *", func() { log.Println("every 1m") })
 	c.Start()
-	time.Sleep(3 * time.Minute)
+	time.Sleep(2 * time.Minute)
 
 	return
 
